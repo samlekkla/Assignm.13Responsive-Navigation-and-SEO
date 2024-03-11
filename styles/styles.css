@@ -1,0 +1,189 @@
+html {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+
+
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+
+}
+
+.layout__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.nav__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: none;
+    gap: 2rem;
+    font-weight: 400;
+    font-weight: bold;
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    color: black;
+}
+
+
+main {
+    background-image: url('sneaker.jpg');
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    padding: 50px;
+}
+
+.layout__main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__container {
+    width: 100%;
+    max-width: 900px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.main__heading {
+    font-size: 50px;
+}
+
+.main__info {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    line-height: 1.5;
+
+}
+
+.button {
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px;
+    border: none;
+}
+
+.button:hover {
+    transition: all 0.2 ease-in-out;
+    background-color: rgb(239, 219, 219);
+}
+
+.nav__toggle {
+    display: none;
+
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    html {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .main__heading {
+        margin: auto;
+    }
+
+    .main__info {
+        font-size: 15px;
+        margin: auto;
+    }
+
+    .layout__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .nav__list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .nav__toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: black;
+        font-size: 20px;
+    }
+
+    .toggle-icon::before {
+        content: "\2630";
+        cursor: pointer;
+    }
+
+    .nav__list.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__list li {
+        margin-bottom: 10px;
+    }
+
+}
