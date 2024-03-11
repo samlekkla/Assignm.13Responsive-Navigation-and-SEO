@@ -1,0 +1,42 @@
+/* Eric Meyer's Reset CSS v2.0 | MIT License | http://meyerweb.com/eric/tools/css/reset/ */
+
+/* Box-sizing border-box box-sizing */
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Remove default margin */
+  body,
+  h1, h2, h3, h4, h5, h6,
+  p, blockquote, pre,
+  dl, dd, ol, ul,
+  figure,
+  hr,
+  fieldset, legend {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove list styles */
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* Set core element defaults */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Remove hyperlinks text decoration */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Add your own styles here */
+  
+  
